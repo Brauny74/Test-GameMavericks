@@ -60,8 +60,9 @@ public class GameController : MonoBehaviour
         {
             if (l == levels[i])
             {
-                levels[i].Beat();
-                if (i < levels.Count - 1)
+                if(levels[i].CurrentState == Level.LevelState.Unlocked)
+                    levels[i].Beat();
+                if (i < levels.Count - 1 && levels[i + 1].CurrentState == Level.LevelState.Locked)
                     levels[i + 1].Unlock();
                 return;
             }

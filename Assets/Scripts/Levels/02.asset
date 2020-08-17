@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   RespawnCooldown: 1
   AmountOfMeteorsToWin: 10
-  CurrentState: 0
+  CurrentState: 1

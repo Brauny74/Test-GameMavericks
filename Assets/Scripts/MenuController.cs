@@ -22,7 +22,7 @@ public class MenuController : MonoBehaviour
             UILevelSelect newLevel = Instantiate(levelIconPrefab, levelSelectWindow.transform).GetComponent<UILevelSelect>();
             levelSelects.Add(newLevel);
             newLevel.Init(levels[i]);
-            newLevel.GetComponent<RectTransform>().anchoredPosition = new Vector2(StartFrom + Step * i, 0.0f);
+            newLevel.GetComponent<RectTransform>().anchoredPosition = new Vector2(StartFrom + Step * i, 37.0f);
         }
         CloseLevelSelectWindow();
     }
